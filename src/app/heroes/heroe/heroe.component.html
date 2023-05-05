@@ -1,0 +1,20 @@
+<h1>{{ name }}</h1>
+
+<dl>
+    <td>Nombre:</td>
+    <dd> {{name}} </dd>
+
+    <td>Edad:</td>
+    <dd> {{age}}</dd>
+
+    <td>Método:</td>
+    <dd> {{ volar()}} </dd>
+    <dd> {{ disparar()}} </dd>
+
+    <td>Capitalizado:</td>
+    <dd> {{ capitalizedName }}</dd>
+
+    <button class="btn btn-primary mx2" (click)="changeName('Spiderman')">Cambiar nombre</button>
+
+    <button class="btn btn primary" (click)="changeAge(21)">Cambiar edad</button>
+</dl>
