@@ -1,6 +1,10 @@
 <h1>Dbz</h1>
 
 <div class="row">
-<app-dbz-list></app-dbz-list>
-<app-dbz-form></app-dbz-form>
+  <div class="col">
+    <dbz-list [characterList]="characters"></dbz-list>
+  </div>
+  <div class="col">
+    <app-dbz-form (onNewCharacter)="onNewCharacter($event)"></app-dbz-form>
+  </div>
 </div>
